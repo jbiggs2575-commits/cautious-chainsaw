@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainImg:hover {
+  transform: scale(1.05);
+}
+
+body {
+  color: aliceblue;
+  background-image: url('../pics/pool8.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hide {
+  color: red;
+  display: none;
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+h3, h5 {
+  font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+.mainImg {
+  box-shadow: 10px 5px 5px #1a9ee0;
+}
+
+#services {
+  display: flex;
+  justify-content: center;
+}
+
+#headContainer {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#products {
+  flex-wrap: wrap;
+}
+
+#contactInfo,
+.cartSection,
+.card-footer {
+  color: black;
+}
+
+.card-body{
+  border-radius: 0 0 5px 5px;
+}
+
+.custom{
+  width: 17rem;
+}
+
+.cartCard {
+  margin-top: 3rem;
+}
+
+#apps {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}

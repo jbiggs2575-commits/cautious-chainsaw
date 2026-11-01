@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Contact Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.tlm.cloud/fontawesome/5.15.2/css/all.css">
+  <link href="https://cdn.tlm.cloud/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/ico" href="../pics/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css">
+</head>
+
+<body>
+
+  <!--NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand">Biggs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="home page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <div>
+          <h5 class="text-white mt-2 me-5">Total: $<span class="cartTotal">0</span></h5>
+        </div>
+        <div class="text-end me-3 mb-2 hide" id="signOutContainer">
+          <button id="signOut" class="btn btn-sm btn-outline-light">Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--Main Container Heading-->
+  <div id="mainContainer">
+    <div id="heading">
+      <h1 id="headContainer" class="fs-1 my-5"><b>Biggs Pools and Spas</b></h1>
+    </div>
+  </div>
+
+  <div class="userSignIn fs-1 mb-5 text-center"></div>
+
+  <!--Sign up section-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 col-12 card">
+        <div class="card-header text-center text-dark">Sign Up/In Today!</div>
+        <div id="joinForm" class="card-body">
+          <input type="text" class="form-control mb-2" id="username" placeholder="Username">
+          <small class="hide smallUsername" style="color: red;">Please enter username!</small>
+          <input type="email" class="form-control mb-2" id="email" placeholder="Email">
+          <small class="hide smallEmail" style="color: red;">Please enter valid email!</small>
+          <input type="password" class="form-control mb-2" id="password" placeholder="Password">
+          <small class="hide smallPassword" style="color: red;">Please enter password!</small>
+          <button class="btn btn-primary createAcc w-100 mb-2" type="button">Create Account</button>
+          <small class="hide existingAcc" style="color: red;">This Account Already Exists!</small>
+        </div>
+
+        <!--  Sign In Form (Initially hidden) -->
+        <div id="signInForm" class="card-body hide">
+          <input type="text" class="form-control mb-2" id="signInUsername" placeholder="Username">
+          <small class="hide smallSignInUsername" style="color: red;">Please enter a username!</small>
+          <input type="password" class="form-control mb-2" id="signInPassword" placeholder="Password">
+          <small class="hide smallSignInPassword" style="color: red;">Please enter a password!</small>
+          <button id="signIn" class="btn btn-primary w-100 mb-2">Sign In</button>
+          <small class="hide smallNoExistingAcc" style="color: red;">Account does not exist!</small>
+          <small class="hide smallNoExistingPassword" style="color: red;">Invalid password!</small>
+        </div>
+        <p id="formHasAcc" class="card-footer text-center mt-3 text-dark" style="font-size: 0.85rem;">
+          <span>Already have an account?</span>
+          <button class="btn btn-primary hasAcc" type="button">Sign In</button>
+        </p>
+        <p id="formNeedsAcc" class="card-footer text-center mt-3 hide" style="font-size: 0.85rem;">
+          <span>Need To Create Account?</span>
+          <button class="btn btn-primary needsAcc" type="button">Sign Up</button>
+        </p>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+
+  <!-- Contact Info -->
+  <div id="contactInfo">
+    <h2 class="text-center my-5">Contact Us Here!</h2>
+    <div class="container my-5">
+      <div class="row">
+        <div class="text-center col-md-6">
+          <p><i class="fab fa-fw" aria-hidden="true" title="Copy to use facebook-square"></i>@biggspoolsandspas.com</p>
+          <p><i class="fab fa-fw" aria-hidden="true" title="Copy to use twitter"></i>@BSS</p>
+          <p><i class="fab fa-fw" aria-hidden="true" title="Copy to use instagram"></i>@biggspoolsandspas.com</p>
+          <p><i class="fab fa-fw" aria-hidden="true" title="Copy to use linkedin"></i>biggs-pool-spas</p>
+        </div>
+        <div class="text-center col-md-6">
+          <p><i class="fa fa-fw" aria-hidden="true" title="Copy to use money-bill-wave"></i>info@biggspoolsandspas.com
+          </p>
+          <p><i class="fa fa-fw" aria-hidden="true" title="Copy to use laptop"></i>@biggspoolsandspas.com</p>
+          <address class=" mb-5">
+            <strong>Biggs Pools and Spas</strong><br>
+            1234 Main St.<br>
+            Indianapolis, IN 46241
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Copyright notice and the icons in the footer-->
+  <footer class="footer bg-dark text-white text-center my-auto">
+    <div class="container">
+      <div id="apps">
+        <div>
+          <i class="fab fa-fw mx-5" aria-hidden="true" title="Copy to use twitter"></i>
+          <i class="fa fa-fw mx-5" aria-hidden="true" title="Copy to use swimming-pool"></i>
+        </div>
+        <div class="icons">
+          <p>&copy; 2025 Biggs Pools and Spas All rights reserved.</p>
+        </div>
+        <div>
+          <i class="fa fa-fw mx-5" aria-hidden="true" title="Copy to use trademark"></i>
+          <i class="fab fa-fw mx-5" aria-hidden="true" title="Copy to use youtube"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+   <!--Shopping Cart being displayed to the page-->
+   <div class="container mb-5 hide">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 col-12">
+        <div class="cartSection">
+          <div class="card rounded cartCard">
+            <h4 class="cardTitle text-center">Shopping Cart</h4>
+            <ul id="cartItems" class="list-group mb-3"></ul>
+            <h5 class="text-center">Total: $<span class="cartTotal2">0</span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+
+  <!--Container for Products-->
+  <div class="container hide">
+    <div class="row">
+      <div id="products" class="d-flex justify-content-center"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.tlm.cloud/jquery/3.5.1/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.tlm.cloud/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://cdn.tlm.cloud/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/contact.js"></script>
+  <script src="../js/products.js"></script>
+</body>
+
+</html>
